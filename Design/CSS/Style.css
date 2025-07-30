@@ -1,0 +1,224 @@
+/* ----------------Navbaar------------ */
+.navbar-custom {
+  background-color:#eceafb;
+  padding: 10px 0;
+}
+.navbar-nav {
+  gap: 20px;
+}
+.nav-link {
+  color: #000 !important;
+  font-weight: 500;
+}
+.btn-contact {
+  background-color: #5c5ce0;
+  color: white;
+  border-radius: 30px;
+  padding: 6px 20px;
+}
+.navbar-brand img {
+  height: 28px;
+}
+
+/* ----------Carosuel--------- */
+/* Main Text Style */
+
+.slides_Main_Text {
+  font-family: 'Questrial', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+}
+
+.Slide_Main_Text2 {
+  color: #5856D6;
+}
+
+/* Description */
+.Slides-Decrpation_Text {
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #4B4949;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #5856D6;
+  border: none;
+  width: 180px;
+}
+
+.btn-outline-primary {
+  color: #5856D6;
+  border: 2px solid #5856D6;
+  width: 180px;
+}
+
+/* Carousel container height fix */
+#demo .carousel-inner,
+#demo .carousel-item {
+  height: auto;
+  padding: 60px 0;
+  background-color: #eceafb;
+}
+
+.carousel-item .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Carousel image */
+.carousel-item img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Carousel controls */
+.carousel-controls-inside {
+  position: absolute;
+  left: 90px;
+  bottom: 115px;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.carousel-controls-inside button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Responsive Fixes */
+@media (max-width: 576px) {
+  .carousel-controls-inside {
+    display: none !important;
+  }
+
+  .carousel-item .text-md-start {
+    text-align: center !important;
+  }
+
+  .slides_Main_Text {
+    font-size: 32px;
+  }
+
+  .Slides-Decrpation_Text {
+    font-size: 16px;
+  }
+
+  .carousel-item {
+    padding: 40px 0;
+  }
+
+  .btn {
+    display: none !important;
+  }
+
+  .carousel-item img {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+/* -----------About US------- */
+.about-section {
+  padding: 60px 20px;
+}
+.about-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'questrial', sans-serif;
+}
+.about-title span {
+  color: #3a48e0;
+}
+.about-text {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'questrial', sans-serif;
+  color: #333;
+}
+
+/* ------------------ Cards ------------------ */
+.info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.info-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.info-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1;
+  font-family: 'Questrial', sans-serif;
+  margin: 10px 0 5px;
+}
+.info-title span {
+  color: #5c5ce0;
+}
+.info-text {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+/* ----------- Responsive for Small Screens ---------- */
+@media (max-width: 576px) {
+  /* Hide carousel navigation buttons */
+  .carousel-controls-inside {
+    display: none;
+  }
+
+  /* Center carousel text */
+  .carousel-item .text-md-start {
+    text-align: center !important;
+  }
+  .carousel-item h2,
+  .carousel-item h3,
+  .Slides-Decrpation_Text {
+    text-align: center;
+  }
+
+  /* Hide buttons in carousel */
+  .carousel-item .btn {
+    display: none !important;
+  }
+
+  /* Card styles */
+  .info-card {
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+  }
+  .info-card img {
+    display: none;
+  }
+  .info-title {
+    font-size: 28px;
+  }
+  .info-text {
+    font-size: 16px;
+  }
+}
